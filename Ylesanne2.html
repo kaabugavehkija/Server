@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<HTML>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Ylesanne2</title>
+	</head>
+	<body>
+		<h1>1. Tabelid</h1>
+			<h2>Esimene tabel</h2>
+				<table border="1">
+					<caption><em><strong>Sportlased</strong></em></caption>
+					<tr>
+						<th>Eesnimi</th><th>Perekonnanimi</th><th>Ala</th><th>Rekord</th><th>Pilt</th>
+					</tr>
+					<tr>
+						<td>Gerd</td><td>Kanter</td><td>Kettaheide</td><td>73.38 m</td><td><img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Gerd_Kanter_cropped.jpg/220px-Gerd_Kanter_cropped.jpg" alt ="Gerd"></td>
+					</tr>
+					<tr>
+						<td>Pavel</td><td>Loskutov</td><td>Maraton</td><td>2:08:53</td><td><img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Pavel_Loskutov%2C_2010.jpg/220px-Pavel_Loskutov%2C_2010.jpg" alt="Pavel"></td>
+					</tr>
+					<tr>
+						<td>Andrus</td><td>Värnik</td><td>Odavise</td><td>87.83 m</td><td><img src ="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Andrus_Varnik.jpg/150px-Andrus_Varnik.jpg" alt="Andrus"></td>
+					</tr>
+					<tr>
+						<td>Enn</td><td>Sellik</td><td>10 000 m</td><td>27:40,61</td><td><img src ="http://g3.nh.ee/images/pix/file181225_181225.710x263.jpg" alt="Enn"></td>
+					</tr>
+				</table>
+		<br>
+		
+			<h2>Teine tabel</h2>
+				<table border ="1">
+					<tr>
+						<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td><td rowspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td rowspan ="3">&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td><td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;&nbsp;&nbsp;<td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+					<tr>
+						<td colspan="3">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					</tr>
+			</table>
+			
+		<h1>2. Vormid</h1>
+		
+		<form action ="Ylesanne2.html" method="GET">
+			<!--nimed-->
+			Eesnimi:<br>
+			<input type="text" name="eesnimi"><br>
+			Perekonnanimi:<br>
+			<input type="text" name="pnimi"><br>
+			<label for="mees">Mees</label>
+			<input type="radio" name="sugu" id = "mees" value="mees" checked><br>
+			<label for="naine">Naine</label>
+			<input type="radio" name="sugu" id = "naine" value="naine"> <br>
+			<label for="muu">Muu</label>
+			<input type="radio" name="sugu" id="muu" value="muu"><br>
+			Sünniaeg:<br>
+			<input type="date" name="saeg"><br>
+			Password:<br>
+			<input type="password" name="pw" placeholder="password"><br>
+			<input type="checkbox" name="user" value="jalgratas">Jalgratas<br>
+			<input type="checkbox" name="user" value="auto">Auto<br>
+			<input type="checkbox" name="user" value="jalad">Jalamees<br>
+			e-mail<br>
+			<input type="email" name="email"><br>
+			<input type="submit" value="Submit">	
+		</form>
+		<p>
+			<a href="http://validator.w3.org/check?uri=referer">
+			<img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" />
+			</a>
+		</p>
+	</body>
+</HTML>
