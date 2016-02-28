@@ -1,0 +1,72 @@
+		h1{
+			color:red; font-size: 40px; text-align: center;
+		}
+		h1 span{
+			background-color: blue;
+		}
+		body{
+			//background-color:#E8E8E8;
+			background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4b/Talv_Saarnak%C3%B5rves,_Harjumaal.jpg");
+		}
+
+		#verps{
+			width: 400px;
+			height: 350px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: pointer;
+			border: 5px solid;
+			border-color: orange;
+		}
+		#verps:hover{
+			border-color:black;
+		}
+		#algus{
+			font-size: 24px;
+			text-align: justify;
+			background: rgb(0, 252, 94);
+		}
+		h2{
+			font-size:32px;
+			font-family: Times, sans-serif;
+			text-decoration: underline;
+		}
+		h3{
+			font-size: 24px;
+			font-style: italic;
+		}
+		h4{
+			font-size: 20px;
+			font-style: normal;
+		}
+		ol{	
+			font-size:18px;
+			width: 400px;
+			background-color: #A0A0A0;
+			color:red;
+		}
+		ul:nth-of-type(1){
+			list-style-type: circle;
+			width: 200px;
+			border: solid;
+			border-radius:10px;
+		}
+		#reklaam{
+			font-size: 20px;
+			background-color: #FFD700;
+			cursor: help;
+		}
+		#doping{
+			font-size: 18px;
+			font-style:italic;
+			cursor: progress;
+		}
+		div  span{
+			font-size: 26px;
+			font-weight: 200;
+		}
+		.lisa  li:hover{
+			font-size:36px;
+		}
+		
