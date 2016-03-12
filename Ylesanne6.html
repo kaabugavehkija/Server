@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Kodune Ülesanne 6r</title>
+	<style type="text/css">
+	.active { background: skyblue; padding: 10px;}
+	</style>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript">
+    $( document ).ready(function() {
+        $('li').first().addClass('active');  
+	
+		$('#next').click(
+			function(){
+				var valitud = $("ul > .active");
+				if ($(valitud).next('li').length > 0){
+					$(valitud).removeClass('active').next().addClass('active');
+					}
+				else if($(valitud).next('li').length == 0){
+					$('ul > li:first').addClass('active');
+					$('ul > li:last').removeClass('active');
+					}
+				});
+		
+		$('#prev').click(
+			function(){
+				var valitud = $("ul > .active");
+				if ($(valitud).prev('li').length > 0){
+					$(valitud).removeClass('active').prev().addClass('active');
+					}
+				else if($(valitud).prev('li').length == 0){
+					$('ul > li:first').removeClass('active');
+					$('ul > li:last').addClass('active');
+					}
+				})
+			});
+					
+	</script>
+</head>
+<body>
+<button id="next">edasi</button>
+<button id="prev">tagasi</button>
+
+<ul>
+<li>esimene</li>
+<li>teine</li>
+<li>kolmas</li>
+<li>neljas</li>
+</ul>
+
+</body>
+</html>
