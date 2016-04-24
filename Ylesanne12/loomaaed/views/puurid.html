@@ -1,0 +1,10 @@
+<div>
+	<?php if (!empty($puurid)){
+		$index = 0;
+		foreach($puurid[$number] as $loom){
+			if($index == 0){
+	?>
+	Puuris number <?php echo $loom['puur'];?> on:<?php } ?>
+		<img src="<?php echo $loom['liik'];?>" alt="<?php echo $loom['nimi'];?>">
+	<?php $index++;}}?>
+</div>
